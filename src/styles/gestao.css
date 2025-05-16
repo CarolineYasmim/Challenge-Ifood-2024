@@ -1,0 +1,42 @@
+@import url('menu.css');
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.bg-red {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.card-body h2, h4 {
+    font-weight: bold;
+}
+
+.card-body p, ul {
+    font-size: 1.1rem;
+}
+
+
+        #backButton {
+            display: none;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            #backButton {
+                display: block;
+            }
+
+            header {
+                position: relative;
+            }
+        }

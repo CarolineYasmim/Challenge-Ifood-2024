@@ -1,0 +1,64 @@
+@import url(menu.css);
+
+body {
+    background-color: white;
+}
+
+.bg-red {
+    background-color: var(--main-color);
+}
+
+.text-white {
+    color: white; 
+     font-weight: bold;/* Texto branco */
+}
+
+
+    
+        /* Estilo para o ícone de voltar */
+        #backButton {
+            display: none;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            #backButton {
+                display: block;
+            }
+
+            header {
+                position: relative;
+            }
+        }
+
+
+.card {
+    border: none; /* Remove as bordas do card */
+    border-radius: 15px; /* Adiciona borda arredondada */
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff66; 
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+

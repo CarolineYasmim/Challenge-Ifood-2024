@@ -1,0 +1,124 @@
+@import url('menu.css');
+
+.bg-danger {
+    background-color: var(--main-color) !important; 
+    margin-bottom: 1.5rem !important;
+}
+
+.item-grade {
+    background-color: var(--background-color); 
+    color: var(--main-color); 
+    border-radius: 10px;
+    padding: 20px; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.item-grade p {
+    font-size: 1.5em; 
+    font-weight: 700;
+    margin: 0; 
+}
+  
+  .text-center {
+    font-size: 1rem;
+    color: var(--title-color);
+    font-weight: 700;
+  }
+
+  .text-center-white {
+    color: white;
+  }
+  
+  .container {
+    height: 300px;
+  }
+
+  #chart {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .chart-title {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 15px;
+  }
+  
+  canvas {
+    max-width: 100%; 
+    height: 200px; 
+  }
+
+
+
+
+.container-alerta {
+    background-color: var(--main-color);
+    color: var(--background-color);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0 !important;
+}
+
+
+.container-alerta img {
+    max-width: 150px;
+}
+
+.container-alerta .texto-alerta p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.logo-ifood {
+    max-width: 200px; 
+    width: 20%; 
+    height: auto;
+}
+
+#backButton {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    #backButton {
+        display: block;
+    }
+
+    header {
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-ifood {
+        max-width: 300px; 
+        width: 40%; 
+    }
+}
+
+@media (min-width: 768px) {
+    .logo-ifood {
+        max-width: 300px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo-ifood {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --main-color: #EA1D2C; 
+  --background-color: white ;
+  --secondary-color: #FCEBEA;
+  --Gray-Light: #A4A19F;
+  --Gray95: #F2F2F2;
+  --title-color: #3F3E3E; 
+  --alert-color: #FF7752;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    background: var(--background-color);
+    padding: 0.5rem 0.8rem 0.5rem 5rem;
+    gap: 1.5rem; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--Gray95);
+    backdrop-filter: blur(2px);
+}
+
+#logo_ifood {
+    width: 7%;
+    height: 7%;
+    object-fit: contain;
+    display: block;
+}
+
+header form {
+	max-width: 20rem;
+	width: 100%;
+	margin-right: auto;
+}
+
+header form .form-input {
+	display: flex;
+	align-items: center;
+	height: 2.5rem;
+}
+
+header form .form-input input {
+	flex-grow: 1;
+	padding: 0 1rem;
+	height: 100%;
+	border: none;
+	background: var(--Gray95);
+	border-radius: 3rem 0 0 3rem;
+	outline: none;
+	width: 100%;
+	color: var(--title-color);
+}
+
+header form .form-input button {
+	width: 2.25rem; 
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--Gray95);
+	color: var(--Gray-Light);
+	font-size: 1.125rem; 
+	border: none;
+	outline: none;
+	border-radius: 0 3rem 3rem 0;
+	cursor: pointer;
+}
+
+header .notification {
+  font-size: 1.25rem;
+  position: relative;
+}
+
+header .notification i {
+  color: var(--alert-color);
+}
+
+header .notification .num {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--alert-color);
+  background: var(--background-color);
+  color: var(--alert-color);
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo da caixa de notificação */
+header .notification .notification-box {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 250px;
+  padding: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--alert-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  font-size: 0.875rem;
+}
+
+/* Exibir caixa de notificação ao passar o mouse */
+header .notification:hover .notification-box {
+  display: block;
+}
+
+
+header .profile img {
+	width: 2.25rem; 
+	height: 2.25rem; 
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+#logo_ifood {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: var(--Gray-Light);
+    border-radius: 0.5rem;
+    padding: rem;
+  }
+  .nav-link:hover {
+    background-color: var(--Gray95);
+    color: var(--title-color);
+  }
+  .nav-link.active {
+    background-color: var(--main-color); 
+    color: var(--secondary-color);
+  }
+  .nav {
+    border: 1px solid var(--Gray95);
+    width: 15rem;
+    padding: 1.5rem;
+  }
+
+  
+
+  .item-description {
+    margin-left: 1rem;
+  }
+
+.content {
+    flex: 1; /* O conteúdo principal ocupa o espaço restante */
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto; /* Rolagem se o conteúdo for maior que a tela */
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  padding: 0.5rem 0rem;
+}
+
+.title h2 {
+  color: var(--title-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  }
+
+
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+input[type="date"], select {
+  padding: 5px;
+  font-size: 0.875rem;
+  border: 1px solid var(--Gray95);
+  color: var(--Gray-Light);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.icons_tooltip {
+  background-color: transparent;
+  border: none;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--Gray-Light);
+}
+
+.icons_tooltip:hover {
+  color: var(--main-color);
+}
+
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  background-color: #fff; 
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-toggle i { 
+  font-size: 24px;
+  color: #333;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    width: 5rem; 
+    padding: 1rem; 
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0; 
+  }
+
+  .nav-link span {
+    display: none; 
+  }
+
+  .nav-link i {
+    font-size: 1rem; 
+  }
+  .nav.active {
+    display: block;
+    animation: slideIn 0.3s ease-in-out forwards;
+  }
+}
+
+@media(max-width: 530px){
+  .analytics-header {
+    flex-wrap: wrap;
+  }
+}
+

@@ -1,0 +1,69 @@
+@import url('menu.css');
+
+.graphics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border-color: var(--gray95);
+  width: 100%;
+  height: 100%;
+  border-color: var(--gray95);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.text-center {
+  font-size: 1rem;
+  color: var(--title-color);
+}
+
+#chart {
+  width: auto;
+  height: 200px;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: 15px;
+}
+
+canvas {
+  max-width: 100%; 
+}
+
+.table-sm td, .table-sm th {
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+@media (max-width: 1162px) {
+  .graphics {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 395px) {
+  body {
+    width: 395px; /* Fixando a largura */
+    height: 100vh; /* Fixando a altura na altura total da viewport */
+    overflow: hidden; /* Impedindo rolagem */
+  }
+
+}

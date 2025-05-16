@@ -1,0 +1,58 @@
+@import url(menu.css);
+
+.content {
+    flex: 1; /* O conteúdo principal ocupa o espaço restante */
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto; /* Rolagem se o conteúdo for maior que a tela */
+}
+
+body {
+    font-family: "Inria Serif", serif;
+}
+
+img.img-logo {
+    width: 40%; /* Logo menor */
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em; /* H1 menor */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.caixa-principal, .caixa-secundaria {
+    background-color: #ea1d2c !important;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+button:hover {
+    background-color: #D3D3D3;
+}
+
+#backButton {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  #backButton {
+      display: block;
+  }
+
+  header {
+      position: relative;
+  }
+}
