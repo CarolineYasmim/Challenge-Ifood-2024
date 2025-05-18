@@ -60,10 +60,10 @@ Manutenção da responsividade, adaptando o layout a diferentes dispositivos e t
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/YasminnNovaes">
+      <a href="https://github.com/CarolineYasmim">
         <img src="https://avatars.githubusercontent.com/u/165516630?v=4" width="100px;" alt="Yasmin"/>
         <br />
-        <sub><b>Yasmin</b></sub>
+        <sub><b>Yasmim</b></sub>
       </a>
     </td>
     <td align="center">
